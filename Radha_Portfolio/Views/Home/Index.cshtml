@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radha Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9cd8c11f6c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav class="menu">
+          <img src="~/css/images/logo.jpg" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>
+            Hi, I'm <span>Radha</span> <br />
+            Manickam From Stockholm.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!--   about    -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="~/css/images/user.JPG" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p style="text-align: justify">
+              I am a Junior Web Developer with a strong desire to develop
+              softwares and all my life, I have had a great interest in
+              technology and computers. Previously, I have had about 10+ years
+              of experience in teaching at Computer Training Centers(Aptech),
+              University(Pudukkottai Arts College) and Preschools(Futura
+              International Preschools, Stockholm). During the Pandemic, I
+              decided to change industry to Programming / app development, which
+              is what I truly wanted to do.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Back End</span><br />Asp.net Core C#, Razor Pages,
+                  Blazor, MVC, Web API, Java
+                </li>
+                <li>
+                  <span>Front End</span><br />
+                  CSS3, Html5, Bootstrap, Javascript
+                </li>
+                <li><span>Database</span><br />Oracle, Entity Framework</li>
+                <li>
+                  <span>Project Management Tool</span><br />Agile, Scrum, Git
+                </li>
+                <li>
+                  <span>Cloud Computing Service</span><br />Microsoft Azure
+                  Fundamentals
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Aug 2022 - Present</span><br />
+                  Internship Trainee <br />
+                  Fieldflower Design & Engineering AB·
+                </li>
+                <li>
+                  <span>Jun 2022 - Present - Part-time</span><br />Substitute
+                  Teacher <br />
+                  Bemannia AB (publ)
+                </li>
+                <li>
+                  <span>2017 - 2021</span><br />Pedagogue <br />Futuraskolan
+                  International School of Stockholm
+                </li>
+                <li>
+                  <span>2003 - 2005</span><br />Educator <br />Aptech Computer
+                  Education
+                </li>
+                <li>
+                  <span>2000 - 2003</span> <br />Teacher <br />Government Arts
+                  College, Pudukkottai
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Apr 2022 - May 2022</span><br />Lexicon Yrkesutbildning
+                  <br />
+                  Microsoft Certification - Microsoft Azure Fundamentals
+                </li>
+                <li>
+                  <span>Nov 2021 - Apr 2022</span><br />Lexicon Yrkesutbildning
+                  <br />.Net Progarammer and System Developer
+                </li>
+                <li>
+                  <span>2019 - 2020</span><br />KompetensUtvecklingsInstitutet
+                  <br />
+                  Barn och Fritid Progammet
+                </li>
+                <li>
+                  <span>2017 - 2018</span> <br />ABF Komvux <br />SFI, SVA Grund
+                  - Swedish language and literature
+                </li>
+                <li>
+                  <span>1996 - 1999</span><br />Alagappa University, Alagappa
+                  Nagar, Karaikudi <br />Master of Computer Applications
+                </li>
+                <li>
+                  <span>1993 - 1996</span><br />Bharathidasan University,
+                  Tiruchirappalli <br />Bachelor of Science in Mathematics
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----- services ------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Back End Web Development</h2>
+            <p>
+              Using Asp.net Core C#, Razor Pages, Blazor and EntityFramework, I
+              am able to develope a Backend Applications.
+            </p>
+            <a href="#">more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-alt"></i>
+            <h2>Front End Web Development</h2>
+            <p>
+              Using Html 5, CSS3, Bootstrap, Ajax and Javascript, I am able to
+              develope a Frontend Applications.
+            </p>
+            <a href="#">more</a>
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>Web API</h2>
+            <p>Using Asp.net core web API, I am able to develope web APIs.</p>
+            <a href="#">more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----- portfolio ------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="~/css/images/work1.png" />
+            <div class="layer">
+              <h3>Learning Management System</h3>
+              <p>
+                Its a group project that we have designed in our course Asp.net. The
+                project is about an LMS simplifies and centralizes communication
+                between teachers, universities and students by collecting
+                schedules, course materials, exercises, assignments and more
+                information in one place - 
+                We designed this project using Asp.net core MVC, Razor Pages and
+                Entity Framework.
+              </p>
+              <a href="https://github.com/filipjohnsson1989/LMS"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="~/css/images/work2.png" />
+            <div class="layer">
+              <h3>Industiral Machinery</h3>
+              <p>
+                During my course Asp.net, I was exposed to development project
+                to develop a Web application in Blazor Web Assembly as front-end
+                and API in Azure-function as Backend and published via Azure
+                DevOps. This has provided me with considerable amount of
+                exxposure in building a CI/CD pipeline in DevOps.
+              </p>
+              <a href="https://github.com/RadhaArul/IndustrialMachinery"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="~/css/images/work3.png" />
+            <div class="layer">
+              <h3>Learning Management System API</h3>
+              <p>
+                I have build API Backend for LMS and The user should be able to
+                make specific API calls to get information about courses and
+                parts of courses (modules).
+              </p>
+              <a href="https://github.com/RadhaArul/Lms.Api"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/RadhaArul?tab=repositories" class="btn"
+          >See more</a
+        >
+      </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i> idayams@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>123456789</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/feed/"
+                ><i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/RadhaArul?tab=repositories"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <a href="~/css/images/my_cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form action="" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2022 Radha</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
